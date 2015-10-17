@@ -11,9 +11,32 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'WelcomeController@index');
+
+
+/*
+| Loads the form page for loremIpsum
+*/
+Route::get('/loremIpsum', 'loremIpsumController@index');
+
+/*
+| Loads the loremIpsum paragraphs requested
+*/
+Route::get('/loremIpsumController', 'loremIpsumController@getloremIpsum');
+
+/*
+| Loads the form page for fake users
+*/
+Route::get('/fakeUsers', 'fakeUsersController@index');
+
+/*
+| Loads gets the fake user data
+*/
+Route::get('fakeUsersController', 'fakeUsersController@getFakeUsers');
+
+
+
+
 
 
 
