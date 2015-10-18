@@ -72,6 +72,9 @@
 
       <footer class="text-center">
          <a href="http://dwa15.com/" data-toggle="tooltip" title="Course web site">dwa 15</a>
+         <a href="http://p1.scottvjohnston.me/" data-tog="tooltip" title="Project ">Project 1</a>
+         <a href="http://p2.scottvjohnston.me/" data-tog="tooltip" title="Project 2">Project 2</a>
+         <a href="https://github.com/scottjohnston/p3" data-tog="tooltip" title="github P3">github P3</a>
       </footer>
 
 

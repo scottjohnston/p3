@@ -32,7 +32,7 @@
         <input type="checkbox" name="email" value="1" >Email
         <br>
         <br>
-        <input type="submit" value="Submit">
+        <input type="submit" value="Generate users" class="btn btn-primary">
       </form>
 
       <br>

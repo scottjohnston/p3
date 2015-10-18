@@ -1,8 +1,7 @@
 @extends('layouts.master')
 
 
-@section('title')
-    Lorem Ipsum generator
+@section('title')Lorem Ipsum generator
 @stop
 
 
@@ -18,11 +17,11 @@
 
       <form method='GET' action="loremIpsumController">
         <br>
-        <label for="noParagrahs">Select the number of Paragraphs:</label>
+        <label for="noParagrahs">Select the number of Paragraphs</label>
         <input max="99" min="1" type="number" name="noParagrahs" id="noParagrahs" value="2" class="form-control scottsTextBox">
         <br>
-        <br><br>
-        <input type="submit" value="Submit">
+        <br>
+        <input type="submit" value="Generate LoremIpsum" class="btn btn-primary">
       </form>
 
       <h3>Lorem Ipsum paragraphs will appear here</h3>
