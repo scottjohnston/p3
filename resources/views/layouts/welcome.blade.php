@@ -34,8 +34,4 @@
         <a href="/fakeUsers" data-tog="tooltip" title="fake user data">Generate fake users</a>
       </p>
 
-
-
-
-
 @stop

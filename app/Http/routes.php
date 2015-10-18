@@ -19,7 +19,7 @@ Route::get('/', 'WelcomeController@index');
 */
 Route::get('/loremIpsum', 'loremIpsumController@index');
 
-\
+
 Route::get('/loremIpsumController', 'loremIpsumController@getloremIpsum');
 
 /*
