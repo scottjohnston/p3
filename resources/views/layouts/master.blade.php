@@ -26,7 +26,7 @@
          <div class="row">
             <div class="center-block ">
 
-               <nav class="navbar navbar-default' >
+               <nav class="navbar navbar-default" >
                <div class="navbar-header">
 
                <button type="button" class="navbar-toggle " data-toggle="collapse" data-tog="tooltip" title="Links" data-target="#example-navbar-collapse">
