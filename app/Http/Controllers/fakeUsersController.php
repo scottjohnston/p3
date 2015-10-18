@@ -14,38 +14,37 @@ class fakeUsersController extends Controller
     return view('layouts.fakeUsers');
   }
 
-  function getFakeUsers ()
+  function getFakeUsers (Request $request)
   {
+    $noUsers = '';
     $faker = \Faker\Factory::create();
     $fakeData ='';
-    $noUsers = 3;
-    $phoneNumber = TRUE;
-    $address = TRUE;
-    $company = TRUE;
-    $email = TRUE;
 
-
-    for ($i = 0; $i < $noUsers; $i++)
+    
+    if ($request->has('noUsers'))
     {
-       $fakeData .= '<br>' . $faker->name . '<br>' ;
+      $noUsers = $request->input('noUsers');
+      for ($i = 0; $i < $noUsers; $i++)
+      {
+         $fakeData .= '<br>' . $faker->name . '<br>' ;
 
-       if ($phoneNumber)
-       {
-         $fakeData .= $faker->phoneNumber .'<br>';
-       }
-       if ($address)
-       {
-         $fakeData .= $faker->address .'<br>';
-       }
-       if($company)
-       {
-         $fakeData .= $faker->Company .'<br>';
-       }
-       if($email)
-       {
-         $fakeData .= $faker->email .'<br>';
-       }
-
+         if ($request->has('phoneNumber'))
+         {
+           $fakeData .= $faker->phoneNumber .'<br>';
+         }
+         if ($request->has('address'))
+         {
+           $fakeData .= $faker->address .'<br>';
+         }
+         if($request->has('company'))
+         {
+           $fakeData .= $faker->Company .'<br>';
+         }
+         if($request->has('email'))
+         {
+           $fakeData .= $faker->email .'<br>';
+         }
+      }
     }
       return view('layouts.fakeUsers')->with('allthefakes', $fakeData);
   }

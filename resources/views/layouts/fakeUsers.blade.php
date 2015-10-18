@@ -2,51 +2,45 @@
 
 
 @section('title')
-    P3 Developers Friend
+    Fake user generator
 @stop
-
-
 
 
 
 @section ('content')
 
-<div class="row">
-   <section class="col-md-8 col-md-offset-2 col-xs-12 col-sm-10 coll-sm-offset-1 col-lg-offset-1 col-lg-10">
-      <h3>form for the users test</h3>
+      <h3>Fake user Generator</h3>
+      <p>
+        Select what atributes and how many users you would like to generate
+      </P>
 
 
-      <form method="get" action="fakeUsersController">
-        Number Of Users<br>
-        <input type="text" name="noUsers" value="3">
-        <br><br>
+      <form method="get" action="fakeUsersController" >
+        <label for="noUsers">Number Of Users</label>
+        <input max='99' min='1' type="number" name="noUsers" id='noUsers' value="3" class="form-control scottsTextBox">
+        <br>
+        <br>
+        <input type="checkbox" name="phoneNumber" value="1" >Phone number
+        <br>
+        <br>
+        <input type="checkbox" name="address" value="1" >Address
+        <br>
+        <br>
+        <input type="checkbox" name="company" value="1" >Company
+        <br>
+        <br>
+        <input type="checkbox" name="email" value="1" >Email
+        <br>
+        <br>
         <input type="submit" value="Submit">
       </form>
 
-   </section>
+      <br>
+      <h4>Fake Users will appear here</h4>
 
-</div>
-<div class="row">
-   <section class="col-md-8 col-md-offset-2 col-xs-12 col-sm-10 coll-sm-offset-1 col-lg-offset-1 col-lg-10">
-      <h3>Faker data</h3>
+      {{-- 'displays the fake users' --}}
 
-
-
-      <?php
-    
-      if (isset ($allthefakes))
-      {
-        echo $allthefakes. ' <br>';
-      }
-
-
-
-        //print_r($faker);
-      ?>
-
-    </section>
-
- </div>
+      {!! isset($allthefakes) ? $allthefakes : 'Fake users will appear here' !!}
 
 
  @stop

@@ -17,10 +17,14 @@ class loremIpsumController extends Controller
     }
 
 
-    function getloremIpsum()
+    function getloremIpsum(Request $request)
     {
       $generator = new \Badcow\LoremIpsum\Generator();
-      $paragraphs = $generator->getParagraphs($_GET['noParagrahs']);
+      $paragraphs ='';
+      if ($request->has('noParagrahs'))
+      {
+        $paragraphs = $generator->getParagraphs($request->input('noParagrahs'));
+      }
 
       return view('layouts.loremIpsum')->with('loremContent', implode('<p>', $paragraphs));
     }

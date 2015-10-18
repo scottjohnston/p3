@@ -2,7 +2,7 @@
 
 
 @section('title')
-    P3 Developers Friend
+    Developers Best Friend
 @stop
 
 
@@ -12,48 +12,30 @@
 
 @section ('content')
 
-<div class="row">
-   <section class="col-md-8 col-md-offset-2 col-xs-12 col-sm-10 coll-sm-offset-1 col-lg-offset-1 col-lg-10">
 
+        <h3>Lorem Ipsum Generator </h3>
         <p>
-          Please choose how many paragraphs you would like to generate of LoremIpsum text
+          Building a text based project and need a way to see what it will look like with out making up reams of
+          text your self? The Developers Best Friend provides a Lorem Ipsum generator that can generate up to 99
+          pragraphs of fake text that you can add to your dev project and help you see what the final project
+          will look like.
         </p>
         <p>
-          <a href="/loremIpsum" data-tog="tooltip" title="LoremIpsum"> LoremIpsum generator</a>
+          <a href="/loremIpsum" data-tog="tooltip" title="LoremIpsum generator"> LoremIpsum generator</a>
         </p>
 
-  </section>
-</div>
-<div class="row">
-   <section class="col-md-8 col-md-offset-2 col-xs-12 col-sm-10 coll-sm-offset-1 col-lg-offset-1 col-lg-10">
-      <h3>Faker data</h3>
+
+      <h3>Fake users</h3>
       <p>
-        <a href="/fakeUsers" data-tog="tooltip" title="LoremIpsum">Generate fake users</a>
+        Building a data base and need a way to generate users? Developers best friend creates customised user
+        data that you can copy and past into your project for testing.
+      </p>
+      <p>
+        <a href="/fakeUsers" data-tog="tooltip" title="fake user data">Generate fake users</a>
       </p>
 
-   </section>
-</div>
-</div>
 
 
-<div class="row">
-   <section class="col-md-8 col-md-offset-2 col-xs-12 col-sm-10 coll-sm-offset-1 col-lg-offset-1 col-lg-10">
-      <h3>Lorem Ipsum test</h3>
 
 
-       <?php
-            //$paragraphsTest = "is set";
-            //$generator = new Badcow\LoremIpsum\Generator();
-            //$paragraphs = $generator->getParagraphs(5);
-            if (isset($loremContent))
-              echo $loremContent;
-              else {
-                echo "Is not set";
-              }
-            //echo implode('<p>', $paragraphsTest);
-      ?>
-
-   </section>
-
-</div>
 @stop
