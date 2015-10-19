@@ -19,6 +19,9 @@ class loremIpsumController extends Controller
 
     function getloremIpsum(Request $request)
     {
+      //validate the noParagrahs input field
+      $this->validate($request, ['noParagrahs' => 'digits_between:1,2',]);
+
       $generator = new \Badcow\LoremIpsum\Generator();
       $paragraphs ='';
       if ($request->has('noParagrahs'))

@@ -9,18 +9,29 @@ use App\Http\Controllers\Controller;
 class fakeUsersController extends Controller
 {
 
+  /* index returns the fakeUsers blade
+   * which contains the form for user input
+   */
   function index()
   {
     return view('layouts.fakeUsers');
   }
 
+  /*
+   *
+   *
+   */
   function getFakeUsers (Request $request)
   {
+    //validate the noUsers input field
+    $this->validate($request, ['noUsers' => 'digits_between:1,2',]);
+
+    //set up the variable sor faker
     $noUsers = '';
     $faker = \Faker\Factory::create();
     $fakeData ='';
 
-    
+
     if ($request->has('noUsers'))
     {
       $noUsers = $request->input('noUsers');
@@ -46,6 +57,7 @@ class fakeUsersController extends Controller
          }
       }
     }
+      //return the faker data as a string
       return view('layouts.fakeUsers')->with('allthefakes', $fakeData);
   }
 

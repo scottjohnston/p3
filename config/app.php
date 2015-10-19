@@ -204,7 +204,6 @@ return [
 
         /*
          * Scotts imported packages
-         *
          */
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
 

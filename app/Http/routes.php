@@ -29,3 +29,11 @@ Route::get('/fakeUsers', 'fakeUsersController@index');
 
 
 Route::get('fakeUsersController', 'fakeUsersController@getFakeUsers');
+
+/*
+| explicit routes for xkcd password generator
+*/
+Route::get('/xkcd', 'xkcdController@index');
+
+
+Route::get('xckdGenerate', 'xkcdController@getPassword');

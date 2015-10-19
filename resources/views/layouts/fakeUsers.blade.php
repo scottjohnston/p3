@@ -11,14 +11,22 @@
 
       <h3>Fake user Generator</h3>
       <p>
-        Select what atributes and how many users you would like to generate
+        Select which atributes and how many users you would like to generate
       </P>
 
 
       <form method="get" action="fakeUsersController" >
         <label for="noUsers">Number Of Users</label>
-        <input max='99' min='1' type="number" name="noUsers" id='noUsers' value="3" class="form-control scottsTextBox">
+        <input max='999' min='0' type="number" name="noUsers" id='noUsers' value="3" class="form-control scottsTextBox">
         <br>
+
+        {{-- 'Errors for the number of users' --}}
+
+          @if($errors->get('noUsers'))
+              @foreach($errors->get('noUsers') as $error)
+                  {{ $error }}
+              @endforeach
+          @endif
         <br>
         <input type="checkbox" name="phoneNumber" value="1" >Phone number
         <br>
@@ -40,7 +48,7 @@
 
       {{-- 'displays the fake users' --}}
 
-      {!! isset($allthefakes) ? $allthefakes : 'Fake users will appear here' !!}
+      {!! isset($allthefakes) ? $allthefakes : '' !!}
 
 
  @stop

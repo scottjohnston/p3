@@ -45,7 +45,7 @@
                   <li><a href="/" data-tog="tooltip" title="Developers Friend"> Developers Friend Main Page</a></li>
                   <li><a href="/loremIpsum" data-tog="tooltip" title="LoremIpsum generator"> LoremIpsum generator</a></li>
                   <li><a href="/fakeUsers" data-tog="tooltip" title="LoremIpsum">Generate fake users</a></li>
-                  <li><a href="#" data-tog="tooltip" title="place holder">project 2</a></li>
+                  <li><a href="/xkcd" data-tog="tooltip" title="place holder">xkcd password generator</a></li>
                </ul>
 
             </div>

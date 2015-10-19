@@ -12,13 +12,20 @@
       <h3>LoremIpsum Generator</h3>
       <p>
         Select how many paragraphs of lorem ipsum you would like and they will
-        appear bellow the form
+        appear bellow the form. A maximum of 99 paragraphs is allowed.
       </p>
 
       <form method='GET' action="loremIpsumController">
         <br>
         <label for="noParagrahs">Select the number of Paragraphs</label>
-        <input max="99" min="1" type="number" name="noParagrahs" id="noParagrahs" value="2" class="form-control scottsTextBox">
+        <input max="999" min="1" type="number" name="noParagrahs" id="noParagrahs" value="2" class="form-control scottsTextBox">
+        {{-- 'Errors for the number of users' --}}
+
+          @if($errors->get('noParagrahs'))
+              @foreach($errors->get('noParagrahs') as $error)
+                  {{ $error }}
+              @endforeach
+          @endif
         <br>
         <br>
         <input type="submit" value="Generate LoremIpsum" class="btn btn-primary">
