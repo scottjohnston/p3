@@ -1,27 +1,41 @@
-## Laravel PHP Framework
+#This is Project 2 for Dwa15 Scott Johnston Developers best friend
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+##Developers best friend
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+1/ Provides a Lorem ipsum generator to create filler text that can be copied into
+a text based project providing a view of what the site will eventually look like.
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+2/ A fake user generator is available for generating users for database testing
 
-## Official Documentation
+3/ An xkcd password generator is also provide to deliver easy to remember but
+difficult to crack passwords
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+###Packages used
 
-## Contributing
+To generate the filler text:
+[badcow loren ipsum gnerator](https://packagist.org/packages/badcow/lorem-ipsum)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+To create the fake users:
+[p3.scottvjohnston.me](http://p3.scottvjohnston.me/)
 
-## Security Vulnerabilities
+###Site structure
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+Each blade has its own corresponding controller
 
-### License
+The landing page is welcome and provides the introduction
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+loremIpsum provides the form and the generated content below the form
+making it easy to create more if you don't like what you got
+
+fakeUsers provides the form and the fake users are generated below
+the form
+
+xkcd delivers a form to the user and generates the password below the
+generate button
+
+
+
+
+[p3.scottvjohnston.me](http://p3.scottvjohnston.me/)
+
+[screen cast link is]()

@@ -7,19 +7,31 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 
-
+/*  Project 3 Scott Johnston dwa15- 
+ *xkcdController provides 2 functions for generating views and
+ *
+ * index() that returns the form for user input
+ *
+ * getPassword() that creates the password as a string and returns it
+ * with the view
+ */
 
 class xkcdController extends Controller
 {
 
-
+  //calls the introduction with the form
   function index()
   {
     return view('layouts.xkcd');
   }
 
 
-  //gerate the password
+  /* getPassword generates a password based on the form data retrieved
+   * from the request object the password is constucted as a string
+   * and returned to the veiw.
+   *
+   *  returns a string with a view
+   */
   function getPassword(Request $request)
   {
     //validate the noUsers input field
@@ -66,11 +78,7 @@ class xkcdController extends Controller
       //add the special character if required
       if ($request->has('specialChar'))
       {
-
-        //for($x = 0; $x < 1; $x++ )
-        //{
           $password = $password . $specCharArray[rand(0, (count($specCharArray) - 1))];
-        //}
       }
 
       //add the number if required
@@ -78,14 +86,9 @@ class xkcdController extends Controller
       {
         $password = $password . rand(1,1000);
       }
-
-
     }
-
-
+    //return the view with the string
     return view('layouts.xkcd')->with('password', $password);
   }
-
-
 
 }

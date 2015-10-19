@@ -1,6 +1,6 @@
 <?php
 
-/*
+/*  'Project 3 Scott Johnston dwa15-'
 |--------------------------------------------------------------------------
 | Application Routes
 |--------------------------------------------------------------------------
@@ -12,7 +12,6 @@
 */
 
 Route::get('/', 'WelcomeController@index');
-
 
 /*
 | explicit routes for loremIpsum
@@ -36,4 +35,4 @@ Route::get('fakeUsersController', 'fakeUsersController@getFakeUsers');
 Route::get('/xkcd', 'xkcdController@index');
 
 
-Route::get('xckdGenerate', 'xkcdController@getPassword');
+Route::get('xkcdGenerate', 'xkcdController@getPassword');
