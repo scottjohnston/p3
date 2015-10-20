@@ -35,7 +35,7 @@ class xkcdController extends Controller
   function getPassword(Request $request)
   {
     //validate the noUsers input field
-    $this->validate($request, ['noWords' => 'required|size:1',]);
+    $this->validate($request, ['noWords' => 'required|numeric|between:1,9',]);
 
     $words = file('wordList.txt', FILE_IGNORE_NEW_LINES);
 

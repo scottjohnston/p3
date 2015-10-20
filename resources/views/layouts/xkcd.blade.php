@@ -21,7 +21,7 @@
 
           {!! Form::label('noWords', 'Number of Users') !!}
 
-          {!! Form::number('noWords', '3', $attributes = array ('class' => 'form-control scottsTextBox', 'min' => '1', 'max' => '999')) !!}
+          {!! Form::number('noWords', '3', $attributes = array ('class' => 'form-control scottsTextBox', 'min' => '1', 'max' => '9')) !!}
           <br>
           {{-- 'Errors for the number of words' --}}
           @if($errors->get('noWords'))

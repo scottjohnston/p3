@@ -11,14 +11,14 @@
         <h3>LoremIpsum Generator</h3>
         <p>
            Select how many paragraphs of lorem ipsum you would like and they will
-           appear bellow the form. Between 1 and 99 paragraphs is allowed.
+           appear below the form. Between 1 and 99 paragraphs is allowed.
         </p>
 
         {!! Form::open(array('url' => 'loremIpsumController', 'method' => 'get')) !!}
 
         {!! Form::label('noParagrahs', 'Select the number of Paragraphs') !!}
         <br>
-        {!! Form::number('noParagrahs', '2', $attributes = array ('class' => 'form-control scottsTextBox', 'min' => '1', 'max' => '999')) !!}
+        {!! Form::number('noParagrahs', '2', $attributes = array ('class' => 'form-control scottsTextBox', 'min' => '1', 'max' => '99')) !!}
         <br>
 
         {{-- 'Errors for the number of users' --}}

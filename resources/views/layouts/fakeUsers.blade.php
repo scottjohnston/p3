@@ -23,10 +23,10 @@
           {{-- 'Errors for the number of users' --}}
           @if($errors->get('noUsers'))
              @foreach($errors->get('noUsers') as $error)
-               {{ $error }} <br><br>
+               {{ $error }}
              @endforeach
           @endif
-
+          <br>
           {!! Form::checkbox('phoneNumber', '1') !!} Phone number
           <br>
           <br>

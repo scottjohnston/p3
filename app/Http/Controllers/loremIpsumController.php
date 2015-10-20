@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-/* Project 3 Scott Johnston dwa15- 
+/* Project 3 Scott Johnston dwa15-
  * loremIpsumController provides 2 functions
  *
  * index() returns the view containing the form
@@ -33,7 +33,7 @@ class loremIpsumController extends Controller
     function getloremIpsum(Request $request)
     {
       //validate the noParagrahs input field
-      $this->validate($request, ['noParagrahs' => 'digits_between:1,2',]);
+      $this->validate($request, ['noParagrahs' => 'required|numeric|between:1,99',]);
 
       //greats a loremIpsum object
       $generator = new \Badcow\LoremIpsum\Generator();

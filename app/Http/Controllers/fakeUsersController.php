@@ -37,7 +37,7 @@ class fakeUsersController extends Controller
   function getFakeUsers (Request $request)
   {
     //validate the noUsers input field
-    $this->validate($request, ['noUsers' => 'digits_between:1,2',]);
+    $this->validate($request, ['noUsers' => 'required|numeric|between:1,99',]);
 
     //number of users container
     $noUsers = '';
