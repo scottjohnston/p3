@@ -12,7 +12,7 @@ Developers Best Friend
         <h3>Lorem Ipsum Generator </h3>
         <p>
            Building a text based project and need a way to see what it will look like with out making up reams of
-           text your self? The Developers Best Friend provides a Lorem Ipsum generator that can generate up to 99
+           text yourself? The Developer's Best Friend provides a Lorem Ipsum generator that can generate up to 99
            paragraphs of fake text that you can add to your dev project and help you see what the final project
            will look like.
         </p>
@@ -21,7 +21,7 @@ Developers Best Friend
         </p>
         <h3>Fake users</h3>
         <p>
-           Building a data base and need a way to generate users? Developers best friend creates customized user
+           Building a database and need a way to generate users? Developer's best friend creates customized user
            data that you can copy and paste into your project for testing.
         </p>
         <p>
