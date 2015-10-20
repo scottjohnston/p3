@@ -8,7 +8,7 @@
 
 @section ('content')
 
-        <h3>LoremIpsum Generator</h3>
+        <h3>Lorem Ipsum Generator</h3>
         <p>
            Select how many paragraphs of lorem ipsum you would like and they will
            appear below the form. Between 1 and 99 paragraphs is allowed.
@@ -29,7 +29,7 @@
         @endif
 
         <br>
-        {!! Form::submit('Generate LoremIpsum', $attributes = array ('class' => 'btn btn-primary')) !!}
+        {!! Form::submit('Generate Lorem Ipsum', $attributes = array ('class' => 'btn btn-primary')) !!}
 
         {!! Form::close() !!}
 
