@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-{{-- 'Project 3 Scott Johnston dwa15-' --}}
+{{-- 'Project 3 Scott Johnston dwa15' --}}
 
 @section('title')
   Fake user generator
@@ -12,36 +12,39 @@
         <p>
            Select which attributes and how many users you would like to generate.
            Up to 99 users can be generated at a time.
-        </P>
-        <form method="get" action="fakeUsersController" >
-           <label for="noUsers">Number Of Users</label>
-           <input max='99' min='0' type="number" name="noUsers" id='noUsers' value="3" class="form-control scottsTextBox">
-           <br>
+        </p>
 
-           {{-- 'Errors for the number of users' --}}
-           @if($errors->get('noUsers'))
-              @foreach($errors->get('noUsers') as $error)
-                {{ $error }}
-              @endforeach
-           @endif
+          {!! Form::open( array ('url' => 'fakeUsersController', 'method' => 'get')) !!}
+
+          {!! Form::label('noUsers', 'Number of Users') !!}
+
+          {!! Form::number('noUsers', '3', $attributes = array ('class' => 'form-control scottsTextBox', 'min' => '1', 'max' => '99')) !!}
+          <br>
+          {{-- 'Errors for the number of users' --}}
+          @if($errors->get('noUsers'))
+             @foreach($errors->get('noUsers') as $error)
+               {{ $error }} <br><br>
+             @endforeach
+          @endif
+
+          {!! Form::checkbox('phoneNumber', '1') !!} Phone number
+          <br>
+          <br>
+          {!! Form::checkbox('address', '1') !!} Address
+          <br>
+          <br>
+          {!! Form::checkbox( 'company', '1') !!} Eompany
+          <br>
+          <br>
+          {!! Form::checkbox( 'email', '1') !!} Email
+          <br>
+          <br>
+
+          {!! Form::submit('Generate users', $attributes = array ('class' => 'btn btn-primary')) !!}
+
+          {!! Form::close() !!}
 
 
-           <br>
-           <input type="checkbox" name="phoneNumber" value="1" >Phone number
-           <br>
-           <br>
-           <input type="checkbox" name="address" value="1" >Address
-           <br>
-           <br>
-           <input type="checkbox" name="company" value="1" >Company
-           <br>
-           <br>
-           <input type="checkbox" name="email" value="1" >Email
-           <br>
-           <br>
-           <input type="submit" value="Generate users" class="btn btn-primary">
-        </form>
-        <br>
         <h4>Fake Users will appear here</h4>
 
 

@@ -11,7 +11,7 @@ Developers Best Friend
 
         <h3>Lorem Ipsum Generator </h3>
         <p>
-           Building a text based project and need a way to see what it will look like with out making up reams of
+           Building a text based project and need a way to see what it will look like without making up reams of
            text yourself? The Developer's Best Friend provides a Lorem Ipsum generator that can generate up to 99
            paragraphs of fake text that you can add to your dev project and help you see what the final project
            will look like.

@@ -17,37 +17,40 @@
              added as well as a number between 1 and 999. Also a separator between
              the words can be specified.
           </P>
-          <form method="get" action="xkcdGenerate" >
-             <label for="noWords">Number Of Words</label>
-             <input max='99' min='1' type="number" name="noWords" id='noWords' value="3" class="form-control scottsTextBox">
-             <br>
+          {!! Form::open( array ('url' => 'xkcdGenerate', 'method' => 'get')) !!}
 
-             {{-- 'Errors for the number of words' --}}
-             @if($errors->get('noWords'))
-             @foreach($errors->get('noWords') as $error)
-             {{ $error }}
-             @endforeach
-             @endif
+          {!! Form::label('noWords', 'Number of Users') !!}
+
+          {!! Form::number('noWords', '3', $attributes = array ('class' => 'form-control scottsTextBox', 'min' => '1', 'max' => '999')) !!}
+          <br>
+          {{-- 'Errors for the number of words' --}}
+          @if($errors->get('noWords'))
+          @foreach($errors->get('noWords') as $error)
+          {{ $error }}
+          @endforeach
+          @endif
+          <br>
+          {!! Form::radio('separator', 'camel') !!} Camel Case
+          <br>
+          <br>
+          {!! Form::radio('separator', '-') !!} Add hyphen separator
+          <br>
+          <br>
+          {!! Form::radio( 'separator', ' ') !!} Add space separator
+          <br>
+          <br>
+          {!! Form::checkbox( 'specialChar', '1') !!} Add special character
+          <br>
+          <br>
+          {!! Form::checkbox( 'number', '1') !!} Add a number between 1 and 1000
+          <br>
+          <br>
 
 
-             <br>
-             <input type="radio" name="separator" value="camel" >Camel Case
-             <br>
-             <br>
-             <input type="radio" name="separator" value="-" >Add hyphen separator
-             <br>
-             <br>
-             <input type="radio" name="separator" value=" radio" >Add space separator
-             <br>
-             <br>
-             <input type="checkbox" name="specialChar" value="1" >Add special character
-             <br>
-             <br>
-             <input type="checkbox" name="number" value="1" >Add a number between 1 and 1000
-             <br>
-             <br>
-             <input type="submit" value="Generate users" class="btn btn-primary">
-          </form>
+          {!! Form::submit('Generate password', $attributes = array ('class' => 'btn btn-primary')) !!}
+
+          {!! Form::close() !!}
+
           <br>
           <h4>xkcd password will be displayed here</h4>
 

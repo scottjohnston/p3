@@ -7,7 +7,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 
-/*  Project 3 Scott Johnston dwa15- 
+/*  Project 3 Scott Johnston dwa15-
  *xkcdController provides 2 functions for generating views and
  *
  * index() that returns the form for user input
@@ -47,6 +47,11 @@ class xkcdController extends Controller
     //if the separator field is set get what it is
     if ($request->has('separator'))
     {
+      $separator = $request->input('separator');
+    }
+    else
+    {
+      //separator is ' '
       $separator = $request->input('separator');
     }
 
