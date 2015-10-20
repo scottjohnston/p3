@@ -13,22 +13,27 @@
            Select how many paragraphs of lorem ipsum you would like and they will
            appear bellow the form. Between 1 and 99 paragraphs is allowed.
         </p>
-        <form method='GET' action="loremIpsumController">
-           <br>
-           <label for="noParagrahs">Select the number of Paragraphs</label>
-           <input max="99" min="1" type="number" name="noParagrahs" id="noParagrahs" value="2" class="form-control scottsTextBox">
 
-           {{-- 'Errors for the number of users' --}}
-           @if($errors->get('noParagrahs'))
-              @foreach($errors->get('noParagrahs') as $error)
-                {{ $error }}
-              @endforeach
-           @endif
+          {!! Form::open(array('url' => 'loremIpsumController', 'method' => 'get')) !!}
 
-           <br>
-           <br>
-           <input type="submit" value="Generate LoremIpsum" class="btn btn-primary">
-        </form>
+          {!! Form::label('noParagrahs', 'Select the number of Paragraphs') !!}
+          <br>
+          {!! Form::number('noParagrahs', '2', $attributes = array ('class' => 'form-control scottsTextBox', 'min' => '1', 'max' => '999')) !!}
+          <br>
+
+          {{-- 'Errors for the number of users' --}}
+          @if($errors->get('noParagrahs'))
+             @foreach($errors->get('noParagrahs') as $error)
+               {{ $error }}
+             @endforeach
+          @endif
+
+          <br>
+          {!! Form::submit('Generate LoremIpsum', $attributes = array ('class' => 'btn btn-primary')) !!}
+
+          {!! Form::close() !!}
+
+
         <h3>Lorem Ipsum paragraphs will appear here</h3>
 
 
