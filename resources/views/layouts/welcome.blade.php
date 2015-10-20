@@ -17,7 +17,7 @@ Developers Best Friend
            will look like.
         </p>
         <p>
-           <a href="/loremIpsum" data-tog="tooltip" title="LoremIpsum generator"> LoremIpsum generator</a>
+           <a href="/loremIpsum" data-tog="tooltip" title="LoremIpsum generator"> Lorem Ipsum generator</a>
         </p>
         <h3>Fake users</h3>
         <p>

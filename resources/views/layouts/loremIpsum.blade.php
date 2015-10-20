@@ -14,7 +14,7 @@
            appear below the form. Between 1 and 99 paragraphs is allowed.
         </p>
 
-        {!! Form::open(array('url' => 'loremIpsumController', 'method' => 'get')) !!}
+        {!! Form::open(array('url' => 'loremIpsumController')) !!}
 
         {!! Form::label('noParagrahs', 'Select the number of Paragraphs') !!}
         <br>

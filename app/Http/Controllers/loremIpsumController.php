@@ -30,7 +30,7 @@ class loremIpsumController extends Controller
      * package and generates the requested number of paragraphs
      * returning the as a string with the view
      */
-    function getloremIpsum(Request $request)
+    function postLoremIpsum(Request $request)
     {
       //validate the noParagrahs input field
       $this->validate($request, ['noParagrahs' => 'required|numeric|between:1,99',]);
