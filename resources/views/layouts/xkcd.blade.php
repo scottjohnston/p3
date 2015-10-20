@@ -15,7 +15,7 @@
              xkcd generator creates a password that is up to 9 words long from a list
              of 60,000 words and is easy to remember. A special character can be
              added as well as a number between 1 and 999. Also a separator between
-             the words can be spcified.
+             the words can be specified.
           </P>
           <form method="get" action="xkcdGenerate" >
              <label for="noWords">Number Of Words</label>
@@ -52,7 +52,7 @@
           <h4>xkcd password will be displayed here</h4>
 
 
-          {{-- 'xkcd pasword here' --}}
+          {{-- 'xkcd password here' --}}
           {!! isset($password) ? $password : 'password will appear here' !!}
 
 @stop

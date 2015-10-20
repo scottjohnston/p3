@@ -39,4 +39,4 @@ generate button
 
 [p3.scottvjohnston.me](http://p3.scottvjohnston.me/)
 
-[screen cast link is]()
+[screen cast link is](#)

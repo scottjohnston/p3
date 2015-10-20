@@ -9,10 +9,10 @@ use App\Http\Controllers\Controller;
 /* Project 3 Scott Johnston dwa15-
  * fakeUsersController provides 2 functions
  *
- * index() which returns the view containig the form
+ * index() which returns the view containing the form
  *
  * getFakeUsers with generates the fake users and
- * retuns them as a string with the view containg the form
+ * returns them as a string with the view containing the form
  * so that the user can easily generate more
  */
 
@@ -42,7 +42,7 @@ class fakeUsersController extends Controller
     //number of users container
     $noUsers = '';
 
-    //create the facker object
+    //create the faker object
     $faker = \Faker\Factory::create();
 
     //set up the variable for users string
@@ -59,7 +59,7 @@ class fakeUsersController extends Controller
       {
          $fakeData .= '<br>' . $faker->name . '<br>' ;
 
-         //add phone numver
+         //add phone number
          if ($request->has('phoneNumber'))
          {
            $fakeData .= $faker->phoneNumber .'<br>';

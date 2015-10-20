@@ -8,7 +8,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-      {{-- 'Css tweek for the size of the text box' --}}
+      {{-- 'Css tweak for the size of the text box' --}}
       <link rel="stylesheet" type="text/css" href="css/scottsCss.css">
 
 
@@ -32,7 +32,7 @@
                   <div class="navbar-header">
 
 
-                     {{-- button for collapseable bar --}}
+                     {{-- button for collapse-able bar --}}
                      <button type="button" class="navbar-toggle " data-toggle="collapse" data-tog="tooltip" title="Links" data-target="navbar-collapse">
                      <span class="sr-only">Toggle navigation</span>
                      <span class="icon-bar"></span>

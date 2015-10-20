@@ -13,7 +13,7 @@ Developers Best Friend
         <p>
            Building a text based project and need a way to see what it will look like with out making up reams of
            text your self? The Developers Best Friend provides a Lorem Ipsum generator that can generate up to 99
-           pragraphs of fake text that you can add to your dev project and help you see what the final project
+           paragraphs of fake text that you can add to your dev project and help you see what the final project
            will look like.
         </p>
         <p>
@@ -21,15 +21,15 @@ Developers Best Friend
         </p>
         <h3>Fake users</h3>
         <p>
-           Building a data base and need a way to generate users? Developers best friend creates customised user
-           data that you can copy and past into your project for testing.
+           Building a data base and need a way to generate users? Developers best friend creates customized user
+           data that you can copy and paste into your project for testing.
         </p>
         <p>
            <a href="/fakeUsers" data-tog="tooltip" title="fake user data">Generate fake users</a>
         </p>
         <h3>xkcd password generator</h3>
         <p>
-           Need a long password that is hard to crack but easy to remember? xkcd pasword generator
+           Need a long password that is hard to crack but easy to remember? xkcd password generator
            uses a 60,000 word library to create a password with real words.
         </p>
         <p>

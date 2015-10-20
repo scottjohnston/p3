@@ -10,7 +10,7 @@
 
         <h3>Fake user Generator</h3>
         <p>
-           Select which atributes and how many users you would like to generate
+           Select which attributes and how many users you would like to generate
            up to 99 users can be generated at a time
         </P>
         <form method="get" action="fakeUsersController" >
