@@ -16,7 +16,10 @@ To generate the filler text is used:
 [badcow loren ipsum gnerator](https://packagist.org/packages/badcow/lorem-ipsum)
 
 To create the fake users:
-[p3.scottvjohnston.me](http://p3.scottvjohnston.me/)
+[fzaninotto/faker](https://packagist.org/packages/fzaninotto/faker)
+
+Laravel Colective to create the forms
+[Laravel Collective](http://laravelcollective.com/docs/5.1/html)
 
 ###Site structure
 
