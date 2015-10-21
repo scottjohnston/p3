@@ -27,16 +27,20 @@
              @endforeach
           @endif
           <br>
-          {!! Form::checkbox('phoneNumber', '1') !!} Phone number
+          {!! Form::checkbox('phoneNumber', '1') !!}
+          {!! Form::label('phoneNumber', 'Phone number') !!}
           <br>
           <br>
-          {!! Form::checkbox('address', '1') !!} Address
+          {!! Form::checkbox('address', '1') !!}
+          {!! Form::label('address', 'Address') !!}
           <br>
           <br>
-          {!! Form::checkbox( 'company', '1') !!} Eompany
+          {!! Form::checkbox( 'company', '1') !!}
+          {!! Form::label('company', 'Company') !!}
           <br>
           <br>
-          {!! Form::checkbox( 'email', '1') !!} Email
+          {!! Form::checkbox( 'email', '1') !!}
+          {!! Form::label('email', 'Email') !!} 
           <br>
           <br>
 

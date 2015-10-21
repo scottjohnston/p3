@@ -33,7 +33,7 @@
 
 
                      {{-- button for collapse-able bar --}}
-                     <button type="button" class="navbar-toggle " data-toggle="collapse" data-tog="tooltip" title="Links" data-target="navbar-collapse">
+                     <button type="button" class="navbar-toggle " data-toggle="collapse" data-tog="tooltip" title="Links" data-target="#navbar-collapse">
                      <span class="sr-only">Toggle navigation</span>
                      <span class="icon-bar"></span>
                      <span class="icon-bar"></span>
@@ -66,7 +66,7 @@
 
 
       <footer class="text-center">
-         <a href="http://dwa15.com/" data-toggle="tooltip" title="Course web site">dwa 15</a>
+         <a href="http://dwa15.com/" data-tog="tooltip" title="Course web site">dwa 15</a>
          <a href="http://p1.scottvjohnston.me/" data-tog="tooltip" title="Project ">Project 1</a>
          <a href="http://p2.scottvjohnston.me/" data-tog="tooltip" title="Project 2">Project 2</a>
          <a href="http://p3.scottvjohnston.me/" data-tog="tooltip" title="Project 3">Project 3</a>
@@ -79,7 +79,7 @@
       <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
       <script>
          $(document).ready(function(){
-             $('[data-toggle="tooltip"]').tooltip();
+             $('[data-tog="tooltip"]').tooltip();
          });
       </script>
 

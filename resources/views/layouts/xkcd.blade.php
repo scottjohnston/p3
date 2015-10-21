@@ -30,22 +30,26 @@
           @endforeach
           @endif
           <br>
-          {!! Form::radio('separator', 'camel') !!} Camel Case
+          {!! Form::radio('separator', 'camel') !!}
+          {!! Form::label('separator', 'Camel Case') !!}
           <br>
           <br>
-          {!! Form::radio('separator', '-') !!} Add hyphen separator
+          {!! Form::radio('separator', '-') !!}
+          {!! Form::label('separator', 'Add hyphen separator') !!}
           <br>
           <br>
-          {!! Form::radio( 'separator', ' ') !!} Add space separator
+          {!! Form::radio( 'separator', ' ') !!}
+          {!! Form::label('separator', 'Add space separator') !!}
           <br>
           <br>
-          {!! Form::checkbox( 'specialChar', '1') !!} Add special character
+          {!! Form::checkbox( 'specialChar', '1') !!}
+          {!! Form::label('specialChar', 'Add special character') !!}
           <br>
           <br>
-          {!! Form::checkbox( 'number', '1') !!} Add a number between 1 and 1000
+          {!! Form::checkbox( 'number', '1') !!}
+          {!! Form::label('number', 'Add a number between 1 and 1000') !!}
           <br>
           <br>
-
 
           {!! Form::submit('Generate password', $attributes = array ('class' => 'btn btn-primary')) !!}
 
