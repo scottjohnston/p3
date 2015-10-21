@@ -47,7 +47,7 @@
           <br>
           <br>
           {!! Form::checkbox( 'number', '1') !!}
-          {!! Form::label('number', 'Add a number between 1 and 1000') !!}
+          {!! Form::label('number', 'Add a number between 1 and 999') !!}
           <br>
           <br>
 
