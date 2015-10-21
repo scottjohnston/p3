@@ -14,7 +14,7 @@
           <p>
              xkcd generator creates a password that is up to 9 words long from a list
              of 60,000 words and is easy to remember. A special character can be
-             added as well as a number between 1 and 999. Also a separator between
+             added as well as a number between 1 and 9. Also a separator between
              the words can be specified.
           </P>
           {!! Form::open( array ('url' => 'xkcdGenerate', 'method' => 'get')) !!}
